@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Wise | Registration Page</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css.min.css">
+
+  <style>
+
+ *{
+    font-family: sans-serif;
+  }
+
+    .custom{
+      border:none;
+      border-bottom: lightgrey solid 1px;
+      border-radius: 0 !important;  
+    }
+    .custom:focus{
+      border-bottom: black 1px solid;
+    }
+
+    .custom:focus + div .custom {
+      border-bottom: black 1px solid !important;
+    }
+
+    .custom-b{
+      border:none;
+      border-radius: 0;  
+    }
+
+    body{
+      background-color: white !important;
+    }
+
+    .fas{
+      color: gray;
+    }
+
+    input[type='submit']{
+      margin: 5px 0;
+      border: solid 2px #FF324D ;
+      color: #262A2C;
+     
+    }
+
+ 
+    input[type='submit']:hover, input[type='submit']:active {
+     box-shadow:  0 1.5rem 4rem rgba(0,0,0,0.4);
+     background-color: #FF324D !important;
+     transition: 0.3s all;
+     color: white;
+     border: solid 2px #FF324D !important;
+    }
+
+    .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -10;
+    }
+
+    .overlay-1{
+      background-color: white ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    }
+
+    .overlay-2{
+   
+    background-color: #FF324D ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 27%, 100% 100%, 45% 100%, 25% 100%, 0 100%, 100% 0);
+       }
+ 
+    input:focus:invalid,  input:focus:invalid + div .custom{
+     border-bottom:#FF324D 1px solid !important;
+  
+   }
+
+   .login:hover{
+    box-shadow : 0 1.5rem 4rem rgb(0 0 0 / 40%);
+   }
+   
+   .login-box{
+      margin: auto;
+      margin-top: 70px;
+      width: 360px;
+   }
+
+   .login-box-msg{
+    margin: 0;
+    padding: 0 20px 20px;
+    text-align: center;
+   color: #777;;
+   }
+
+  
+
+   .card{
+    border: none;
+   }
+
+   .fas{
+    color: #777;
+   }
+
+   .custom{
+    background: transparent;
+   }
+
+   .register-box{
+
+    width: 550px !important;
+    margin: auto !important;
+    margin-top: 17px !important;
+   }
+
+   .register-logo {
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-bottom: .9rem;
+    text-align: center;
+}
+
+.social-auth-links{
+  margin: 10px 0px;
+}
+
+
+  </style>
+  
+</head>
+<body class="hold-transition register-page">
+<div class="register-box" style="width: auto;">
+  <div class="register-logo">
+    <a href="#" style="color: #1E2224;" ><b style="color: #FF324D;">Shop </b>  Wise  </a>
+  </div>
+
+  <div class="card shadow-lg text-center">
+    <div class="card-body register-card-body">
+      <h5 class="login-box-msg">Sign up for a new account</h5>
+
+      <form action="../../index.html" method="post">
+      <div class="d-flex flex-row"> 
+        <div class="input-group mb-3 mr-3">
+          <input type="text" class="form-control custom" placeholder="First name"> 
+        </div>
+        <div class="input-group mb-3 ">
+          <input type="text" class="form-control custom" placeholder="Last name">
+        </div>
+      </div>
+      <div class="d-flex flex-row"> 
+        <div class="input-group mb-3 mr-3">
+          <input type="text" class="form-control custom" placeholder="Company Name">
+        </div>
+        <div class="input-group mb-3 ">
+          <input type="text" class="form-control custom" placeholder="Display Name">
+          
+        </div>
+      </div> 
+      <div class="d-flex flex-row mt-lg-3"> 
+        <div class="input-group mb-2 ">
+          <label for="img"><h5 class="font-weight-normal " style="color: #777" >Business Logo</h5></label>
+          <input type="file" id='img' class="form-control custom-b " accept="image/*" placeholder="Logo">
+        </div>
+    </div>
+      <div class="d-flex flex-row"> 
+        <div class="input-group mb-3 mr-3">
+          <input type="text" class="form-control custom" placeholder="Contact Number">
+          <div class="input-group-append">
+            <div class="input-group-text custom">
+              <span class="fas fa-address-card"></span>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="d-flex flex-row"> 
+        <div class="input-group mb-3 mr-3">
+          <input type="email" class="form-control custom" placeholder="email address">
+          <div class="input-group-append">
+            <div class="input-group-text custom">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3 ">
+          <input type="Password" class="form-control custom" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text custom">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+          <!-- /.col -->
+      <a href="vendor_register_continue.html" class="btn btn-outline-primary px-5" > Continue   </a>
+      </form>
+      <p style="color: #777">- OR -</p>
+      <div class="social-auth-links text-center"> 
+       
+        <a href="#" class="btn btn-lg-block mr-3 " style="background-color: #425F9C;color: white;" >
+          <i class="fab fa-facebook mr-2"></i>
+          Sign up using Facebook
+        </a>
+        <a href="#" class="btn btn-lg-block" style="background-color: #B23121;color: white;">
+          <i class="fab fa-google-plus mr-2"></i>
+          Sign up using Google+
+        </a>
+      </div>
+
+     <p class="d-inline" >Already have a account ? </p> <a href="login.html" class="text-center">Login</a>
+    </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
+</div>
+<!-- /.register-box -->
+<div class="overlay" >
+<div class="overlay-1"></div>
+<div class="overlay-2"></div>
+</div>
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+</body>
+</html>
